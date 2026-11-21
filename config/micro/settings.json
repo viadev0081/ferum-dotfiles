@@ -1,0 +1,18 @@
+{
+  "colorscheme": "kanagawa",
+  "diffgutter": true,
+  "mkparents": true,
+  "pluginchannels": [
+      "https://githubusercontent.com"
+  ],
+  "scrollbar": true,
+  "softwrap": true,
+  "tabstospaces": true,
+
+    "*.js": {
+        "tabsize": 4
+    },
+    "*.py": {
+        "tabsize": 4
+    }
+}
