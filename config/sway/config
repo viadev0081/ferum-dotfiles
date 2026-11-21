@@ -1,0 +1,37 @@
+## ====================
+## !! FOR SWAYFX 0.6 !!
+## ====================
+
+exec swaybg -i ~/walls/catp/catppuccin-wall-1.png -m fill -o eDP-1
+exec nm-applet
+exec_always --no-startup-id pipewire
+exec_always --no-startup-id pipewire-pulse
+
+bar {
+    font JetBrainsMono Nerd Font 11
+    height 25
+
+    position top
+
+    # status_command i3status
+    # separator_symbol "|"
+    # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+
+    swaybar_command waybar
+    colors {
+        background #1e1e2e
+        statusline #cdd6f4
+        focused_statusline #cdd6f4
+        focused_separator #181825
+
+        focused_workspace   #313244  #b4befe    #1e1e2e
+        active_workspace    #313244  #313244  #cdd6f4
+        inactive_workspace  #313244  #181825  #cdd6f4
+        urgent_workspace    #313244  #fab387  #1e1e2e
+    }
+}
+
+include /etc/sway/config.d/*
+include ~/.config/sway/modules/variables.conf
+include ~/.config/sway/modules/base.conf
+include ~/.config/sway/modules/binds.conf
