@@ -1,0 +1,156 @@
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 13px;
+}
+
+window#waybar {
+    margin: 15px 15px;
+    padding: 15px 15px;
+    background-color: #1e222a;
+    transition-property: background-color;
+    transition-duration: 0.10s;
+}
+
+window#waybar.hidden {
+    opacity: 0.56;
+}
+
+#workspaces {
+    background-color: transparent;
+}
+
+#workspaces button {
+    all: initial;
+    min-width: 0;
+    box-shadow: inset 0 -3px transparent;
+    padding: 6px 18px;
+    margin: 6px 3px;
+    border-radius: 4px;
+    background-color: #242933;
+    color: #e5e9f0;
+}
+
+#workspaces button.active {
+    color: #d8dee9;
+    background-color: #81a1c1;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: #475258;
+    background-color: #86a1c1;
+}
+
+#workspaces button.urgent {
+    background-color: #c5727a;
+}
+
+#custom-notification {
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+#memory,
+#cpu,
+#user,
+#custom-power,
+#battery,
+#backlight,
+#wireplumber,
+#network,
+#clock,
+#tray {
+    border-radius: 4px;
+    margin: 6px 3px;
+    padding: 6px 12px;
+    background-color: #242933;
+    color: #222630;
+}
+
+#custom-power {
+    margin-right: 6px;
+}
+
+#custom-logo {
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-left: 5px;
+    font-size: 15px;
+    border-radius: 8px 0px 0px 8px;
+    color: #97b67c;
+}
+
+#memory {
+    background: #242933;
+    color: #e69875;
+}
+
+#cpu {
+    background: #242933;
+    color: #8fbcbb
+}
+
+#user {
+    background: #242933;
+    color: #a3be8c;
+}
+
+#battery {
+    background-color: #242933;
+    color: #b74e58;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+    color: #a3be8c;
+    background: #242933;
+}
+
+#battery.charging {
+    background-color: #242933;
+    /* background-color: #a7c080; */
+    color: #a3be8c;
+}
+
+#backlight {
+    background: #242933;
+    color: #e69875;
+}
+
+#wireplumber {
+    background: #242933;
+    color: #d79784;
+}
+
+#network {
+    background-color: #242933;
+    color: #5e81ac;
+    padding-right: 17px;
+}
+
+#clock {
+    font-family: JetBrainsMono Nerd Font;
+    background-color: #242933;
+    color: #a97ea1;
+}
+
+#custom-power {
+    background-color: #242933;
+    color: #d8dee9;
+}
+
+
+tooltip {
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #1c2230;
+}
+
+tooltip label {
+    padding: 5px;
+    background-color: #1d212b;
+}
